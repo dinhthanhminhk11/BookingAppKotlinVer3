@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/kingMainFragment">
+
+    <fragment
+        android:id="@+id/kingMainFragment"
+        android:name="com.example.bookingappkotlinver3.KingMainFragment"
+        android:label="fragment_king_main"
+        tools:layout="@layout/fragment_king_main">
+        <action
+            android:id="@+id/action_kingMainFragment_to_detailHotelActivity"
+            app:destination="@id/detailHotelActivity"
+            app:enterAnim="@anim/fragment_slide_left_enter"
+            app:exitAnim="@anim/fragment_slide_left_exit"
+            app:popEnterAnim="@anim/fragment_slide_right_enter"
+            app:popExitAnim="@anim/fragment_slide_right_exit" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailHotelActivity"
+        android:name="com.example.bookingappkotlinver3.view.fragment.detail.DetailHotelActivity"
+        android:label="fragment_detail_hotel_activity"
+        tools:layout="@layout/fragment_detail_hotel_activity">
+
+    </fragment>
+</navigation>

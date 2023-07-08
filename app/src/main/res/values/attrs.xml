@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ImageTextView">
+    <attr name="android:textSize"/>
+    <attr name="android:textColor"/>
+    <attr name="textColorStateChecked" format="color" localization="suggested"/>
+    <attr name="android:text"/>
+    <attr name="iconColor" format="color" localization="suggested"/>
+    <attr name="iconColorStateChecked" format="color" localization="suggested"/>
+    <attr name="iconSrc" format="reference" localization="suggested"/>
+    <attr name="iconBackgroundColor" format="color" localization="suggested"/>
+    <attr name="iconBackgroundColorStateChecked" format="color" localization="suggested"/>
+    <attr name="iconSize" format="dimension" localization="suggested"/>
+    <attr name="iconRadius" format="dimension" localization="suggested"/>
+    <attr name="iconPadding" format="dimension" localization="suggested"/>
+    <attr name="textRelative" format="integer" localization="suggested">
+        <enum name="right" value="0" />
+        <enum name="bottom" value="1" />
+        <enum name="center" value="2" />
+    </attr>
+</declare-styleable>
+    <declare-styleable name="MaterialRippleLayout">
+        // color of ripple
+        <attr name="mrl_rippleColor" format="color" localization="suggested" />
+
+        // radius of hover and starting ripple
+        <attr name="mrl_rippleDimension" format="dimension" localization="suggested" />
+
+        // if true, ripple is drawn in foreground; false - background
+        <attr name="mrl_rippleOverlay" format="boolean" localization="suggested" />
+
+        // alpha of ripple
+        <attr name="mrl_rippleAlpha" format="float" localization="suggested" />
+
+        // duration of ripple animation
+        <attr name="mrl_rippleDuration" format="integer" localization="suggested" />
+
+        // duration of fade out effect on ripple
+        <attr name="mrl_rippleFadeDuration" format="integer" localization="suggested" />
+
+        // if true, a hover effect is drawn when view is touched
+        <attr name="mrl_rippleHover" format="boolean" localization="suggested" />
+
+        // background under ripple drawable; used with rippleOverlay="false"
+        <attr name="mrl_rippleBackground" format="color" localization="suggested" />
+
+        // if true, delays calls to OnClickListeners until ripple effect ends
+        <attr name="mrl_rippleDelayClick" format="boolean" localization="suggested" />
+
+        // if true, ripple background color persists after animation, until setRadius(0) is called
+        <attr name="mrl_ripplePersistent" format="boolean" localization="suggested" />
+
+        / if true, MaterialRippleLayout will optimize for use in AdapterViews
+        <attr name="mrl_rippleInAdapter" format="boolean" localization="suggested" />
+
+        // radius of corners of ripples. Note: it uses software rendering pipeline for API 17 and below
+        <attr name="mrl_rippleRoundedCorners" format="dimension" localization="suggested" />
+    </declare-styleable>
+    <declare-styleable name="FadingEdgeLayout">
+        <attr name="fel_edge" format="integer">
+            <flag name="top" value="1"/>
+            <flag name="bottom" value="2"/>
+            <flag name="left" value="4"/>
+            <flag name="right" value="8"/>
+        </attr>
+        <attr name="fel_size_top" format="dimension"/>
+        <attr name="fel_size_bottom" format="dimension"/>
+        <attr name="fel_size_left" format="dimension"/>
+        <attr name="fel_size_right" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CircleImageView">
+        <attr name="civ_border_width" format="dimension" />
+        <attr name="civ_border_color" format="color" />
+        <attr name="civ_border_overlay" format="boolean" />
+        <attr name="civ_circle_background_color" format="color" />
+    </declare-styleable>
+</resources>
